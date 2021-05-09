@@ -1,209 +1,75 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-	<meta charset="UTF-8">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/basket.js/0.5.2/basket.full.min.js"
-		integrity="sha512-6zEEWFlGEMUXoRnlFNXCh6LkFZ1QZZomR+Z3H+rqlyctGH5L1Bi24r6bYaagcn7qP7uK/YeeIcIDQe8Fr39yeA=="
-		crossorigin="anonymous"></script>
-	<script>
-		basket.require(
-			{ url: 'https://unpkg.com/pageable@latest/dist/pageable.min.js' },
-			{ url: 'https://cdn.materialdesignicons.com/3.0.39/css/materialdesignicons.min.css' },
-			{ url: 'https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js' },
-			{ url: 'https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap' }
-		);
-	</script>
-	<title>raghav9official- this is where my page resides now </title>
-	<style>
-		body {
-			font-family: 'Comfortaa', monospace;
-			background-color: grey;
-			text-align: center;
-			font-size: 4vw;
-			cursor: all-scroll;
-		}
-
-		.name {
-			transform: translate(-50%, -200%);
-		}
-
-		section {
-			position: relative;
-		}
-
-		h1,
-		h2,
-		h3,
-		h4,
-		iframe {
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-		}
-
-		#page-1 {
-			background: #5651b5;
-		}
-
-		#page-2 {
-			background: #7d51b5;
-			text-align: center;
-		}
-
-		#page-3 {
-			background: #51b55f;
-			text-align: center;
-		}
-
-		#page-4 {
-			background: #b55b51;
-			text-align: center;
-		}
-
-		#page-5 {
-			background: #51b5ae;
-			text-align: center;
-		}
-
-		#page-6 {
-			background: #518db5;
-			text-align: center;
-		}
-		.arrow {
-			transform: translate(-50%, +300%);
-			font-size: 4vw;
-			animation-name: arrow;
-			animation-duration: 1.5s;
-			animation-delay: 500ms;
-			animation-iteration-count: infinite;
-		}
-
-		@keyframes arrow {
-			0% {
-				opacity: 0%;
-			}
-
-			100% {
-				opacity: 100%;
-			}
-		}
-
-		.page2 {
-			animation-name: page2;
-			animation-duration: 10s;
-			animation-iteration-count: infinite;
-		}
-
-		@keyframes page2 {
-			from {
-				background: #b216c7;
-			}
-
-			to {
-				background: #97003f;
-			}
-		}
-
-		.page3 {
-			animation-name: page3;
-			animation-duration: 10s;
-			animation-iteration-count: infinite;
-		}
-
-		@keyframes page3 {
-			from {
-				background: #51b55f;
-			}
-
-			to {
-				background: #51b597;
-			}
-		}
-
-		.page4 {
-			animation-name: page4;
-			animation-duration: 10s;
-			animation-iteration-count: infinite;
-		}
-
-		@keyframes page4 {
-			from {
-				background: #b55b51;
-			}
-
-			to {
-				background: #ac2753;
-			}
-		}
-	</style>
-</head>
-
-<body>
-	<main>
-		<section data-anchor="page 1">
-			<h1 class="name" onclick="document.location.href = `https://fullstackraghav.rf.gd/`;">
-				<span class="name_main">
-
-				</span>
-			</h1>
-			<h1 class="arrow">
-				&DownArrow;
-			</h1>
-		</section>
-		<section class="page2" data-anchor="page 2">
-			<h3>
-				THINGS I KNOW:
-			</h3>
-		</section>
-		<section class="page3" data-anchor="page 3">
-			<h2>
-				HTML (HYPER TEXT MARKUP LANGUAGE)
-			</h2>
-		</section>
-		<section class="page4" data-anchor="page 4">
-			<h2>
-				CSS (CASCAING STYLE SHEET)
-			</h2>
-		</section>
-		<section data-anchor="page 5">
-			<h2>
-				JS (JAVASCRIPT OF-COURCE)
-			</h2>
-		</section>
-		<section data-anchor="page 6">
-			<h2>
-				NODE JS (JAVASCRIPT IN A C++ SHELL)
-			</h2>
-		</section>
-                <section data-anchor="page 7">
-			<h2>
-				See <a href="https://raghav9official.github.io/components.js/">COMPONENTS.JS</a><br>
-                               A javascript library for the modern web
-			</h2>
-		</section>
-                <section data-anchor="page 8">
-			<h2>
-				See <a href="https://raghav9official.github.io/getOnline/">getOnline</a><br>
-                               A website builder for a responsive web.
-			</h2>
-		</section>
-               
-	</main>
-	<script>
-		const pageable = new Pageable("main", {
-			freeScroll: true,
-			swipeThreshold: 400,
-			infinite: false
-		});
-
-		var typed = new Typed('.name_main', {
-			strings: ["RAGHAV 9 OFFICIAL", "COOL", "AWESOME", "raghav9official", "Raghav9Official", "Raghav9official", "raghav9Official", "RAGHAV9OFFICIAL", "OPEN SOURCE !!!", "YES INDEED !", "OH YEAH!", "JavaScript", "RAGHAV<sub>9</sub>OFFICIAL"],
-			typeSpeed: 25
-		});
-
-	</script>
-</body>
-
+<html>
+    <head>
+        <title>
+            raghav9official -raghav9official.github.io
+        </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap" rel="stylesheet">
+    </head>
+    <style>
+        html{
+            margin: 0px;
+        }
+        img{
+            border-radius: 50%;
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            height: 180px;
+            width: auto;
+        }
+        .img{
+            text-align: center;
+            justify-content: center;
+        }
+        body{
+            background: black;
+            color: white;
+            font-family: 'Anonymous Pro', monospace;
+        }
+        .projects{
+            padding-top: 20px;
+            padding-bottom: 20px;
+            text-align: left;
+            padding-left: 20px;
+        }
+        .footer{
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+    </style>
+    <body>
+        <div class=".img text-center">
+            <img src="./logo.png" alt="raghav9official.github.io">
+        </div>
+        <div class="display-3 text-center">
+            RAGHAV<sub>9</sub>OFFICIAL
+        </div>
+            <br>
+            <br>
+            <br>
+        <div class="display-4 projects">
+            PROJECTS:
+        </div>
+        <div>
+            <a class="projects" href="https://raghav9official.github.io/component.js/">
+                COMPONENT.JS
+            </a>-A LIBRARY TO REMOVE THE HEADACHE OUT OF DEVS.
+            <br>
+            <br>
+            <a class="projects" href="https://raghav9official.github.io/getOnline/">
+                GETONLINE
+            </a>-A FRAMEWORK TO MAKE BEUTIFUL WEBSITES WITH EASE.
+        </div>
+        <br>
+        <br>
+        <div class="footer text-center">
+            MIT LICENCE (C) RAGHAV<sub>9</sub>OFFICIAL
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
 </html>
