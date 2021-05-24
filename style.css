@@ -1,0 +1,43 @@
+h1{
+    font-size: larger;
+}
+img{
+    border-radius: 50%;
+    height: 200px;
+    width: auto;
+}
+body{
+    margin: 0px;
+    padding: 30px 30px 30px 30px;
+    background: black;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+#app{
+    text-align: center;
+}
+.head{
+    font-size: 3vh;
+    padding: 10px 30px 30px 30px;
+}
+.intro{
+    text-align: left;
+}
+a{
+    color: rgb(17, 240, 17);
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+footer{
+    padding: 30px 30px 30px 30px;
+    text-align: center;
+}
+.heart{
+    font-size: 20px;
+    color: red;
+}
+.footer-name{
+    color: rgb(0, 119, 255);
+}

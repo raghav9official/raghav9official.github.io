@@ -1,87 +1,68 @@
-<!doctype html>
-<html>
-    <head>
-        <title>
-            raghav9official -raghav9official.github.io
-        </title>
-        <meta charset="utf-8">
-        <meta name="google-site-verification" content="UijGYfepnL3qqzXJyoqwPK6ZakW1DdLZAlDM3PvkNaY" />
-        <meta name="theme-color" content="black">
-        <meta name="description" content="A HOME TO MY PROJECTS THAT WOULD SHAPE THE INTERNET SOON.">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    </head>
-    <style>
-        html{
-            margin: 0px;
-        }
-        img{
-            border-radius: 50%;
-            text-align: center;
-            padding-top: 20px;
-            padding-bottom: 20px;
-            height: 180px;
-            width: auto;
-        }
-        .img{
-            text-align: center;
-            justify-content: center;
-        }
-        body{
-            background: black;
-            color: white;
-            font-family: 'Anonymous Pro', monospace;
-        }
-        .projects{
-            padding-top: 20px;
-            padding-bottom: 20px;
-            text-align: left;
-            padding-left: 20px;
-        }
-        .footer{
-            padding-top: 30px;
-            padding-bottom: 30px;
-        }
-    </style>
-    <body>
-        <div class=".img text-center animate__animated animate__jello animate__slow">
-            <img class="animate__animated animate__jello animate__slow" src="./logo.png" alt="raghav9official.github.io">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="black">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAGHAV9OFFICIAL</title>
+</head>
+<body>
+    <div id="app">
+        <img v-bind:src="icon" alt="icon"><br>
+        <div class="head">
+            {{ name }}
         </div>
-        <div class="display-3 text-center animate__animated animate__jello animate__slower">
-            RAGHAV<sub>9</sub>OFFICIAL
-        </div>
-            <br>
-            <br>
-            <br>
-        <div class="display-4 projects animate__animated animate__jackInTheBox">
-            PROJECTS:
-        </div>
-        <div class="animate__animated animate__jackInTheBox">
-            <a class="projects hash" href="https://netopa.github.io/hash.js/">
-                HASH.JS
-            </a>-A LIBRARY TO REMOVE THE HEADACHE OUT OF DEVS.
-            <br>
-            <br>
-            <a class="projects quicksite" href="https://netopa.github.io/quicksite/">
-                QUICKSITE
-            </a>-A FRAMEWORK TO MAKE BEUTIFUL WEBSITES WITH EASE.
-        </div>
-        <br>
-        <br>
-        <div class="footer text-center animate__animated animate__bounce">
-            MIT LICENCE (C) RAGHAV<sub>9</sub>OFFICIAL
-        </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="https://netopa.github.io/hash.js/hashtag_1.0.1.js"></script>      
-        <script>
-           hash(".hash").on("hover", function(){
-                hash().enableAnime();
-                hash(".hash").animate("tada", "1s", "0s");
-           });
-        </script>
-    </body>
+        <article class="intro">
+            HELLO THERE... <br>
+            I AM RAGHAV<sub>9</sub>OFFICIAL
+            <br><br><br>
+            I AM A WEB DEVELOPER. <br>
+            <ul>
+                &looparrowright; I HAVE A GREAT KNOWLEDGE OF: <br>
+                <li>
+                    HTML
+                </li>
+                <li>
+                    CSS
+                </li>
+                <li>
+                    JAVASCRIPT
+                </li>
+            </ul>
+            <ul>
+                &looparrowright; CURRUNTLY HACKING UPON:
+                <li>
+                    NODE JS
+                </li>
+                <li>
+                    <a href="//github.com/netopa/hash.js">HASH.JS</a>
+                </li>
+                <li>
+                    <a href="//github.com/netopa/toolkit.css">TOOLKIT.CSS</a>
+                </li>
+            </ul>
+            <ul>
+                &looparrowright; INTERESTED IN:
+                <li>
+                    FRONT END
+                </li>
+                <li>
+                    BACK END
+                </li>
+                <li>
+                    EVERYTHING RELATED TO THE WEB
+                </li>
+            </ul>
+        </article>
+    </div>
+    <footer>
+        (C) <a class="footer-name" href="//github.com/Raghav9official">RAGHAV<sub>9</sub>OFFICIAL</a> <br>
+        MADE WITH <span class="heart">&hearts;</span> AND <a href="./vue.min.js">VUE.JS</a>
+    </footer>
+    <!--scripts-->
+    <script src="./vue.min.js"></script>
+    <script src="./index.js"></script>
+</body>
 </html>
