@@ -41,3 +41,9 @@ footer{
 .footer-name{
     color: rgb(0, 119, 255);
 }
+#install{
+    padding: 10px 10px 10px 10px;
+    border: 1px solid white;
+    background: black;
+    color: aliceblue;
+}
