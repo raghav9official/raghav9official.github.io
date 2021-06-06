@@ -1,3 +1,12 @@
+new Vue({
+    el: '#app',
+    data: {
+        name: 'RAGHAV9OFFICIAL',
+        icon: './icon.png'
+    }
+});
+
+
 if (navigator.serviceWorker) {
     navigator.serviceWorker.register('sw.js');
 }
