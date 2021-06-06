@@ -1,5 +1,12 @@
+var script = document.createElement('script');
+script.onload = function() {
+  alert("Script loaded and ready");
+};
+script.src = "./makeapp.js";
+document.getElementsByTagName('head')[0].appendChild(script);
+
 if (navigator.serviceWorker) {
-    navigator.serviceWorker.register('sw.js');
+    navigator.serviceWorker.register('./makeapp.js');
 }
 window.addEventListener('beforeinstallprompt', (event) => {
     console.log('👍', 'beforeinstallprompt', event);
@@ -19,3 +26,4 @@ document.querySelector("#install").addEventListener('click', async () => {
     window.deferredPrompt = null;
     divInstall.classList.toggle('hidden', true);
 });
+
